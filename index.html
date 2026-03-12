@@ -6,18 +6,150 @@
 <title>Pavankumar C M | Portfolio</title>
 
 <style>
-body{
-font-family:Arial, Helvetica, sans-serif;
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
 background:#0b0f17;
 color:white;
 }
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:40px;
+background:#111827;
+}
+
+header img{
+width:120px;
+border-radius:50%;
+border:3px solid #38bdf8;
+margin-bottom:15px;
+}
+
+header h1{
+color:#38bdf8;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* SECTION */
+
+section{
+max-width:1000px;
+margin:auto;
+padding:60px 20px;
+}
+
+h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+/* CARD */
+
+.card{
+background:#111827;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* SKILLS BAR */
+
+.bar{
+width:100%;
+height:10px;
+background:#1f2937;
+border-radius:5px;
+margin-bottom:15px;
+}
+
+.bar div{
+height:10px;
+background:#38bdf8;
+border-radius:5px;
+}
+
+.java{width:70%;}
+.git{width:80%;}
+.aws{width:60%;}
+.html{width:85%;}
+
+/* PROJECT */
+
+.project{
+background:#111827;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+background:#38bdf8;
+color:black;
+padding:8px 14px;
+border-radius:5px;
+text-decoration:none;
+font-weight:bold;
+margin-top:10px;
+margin-right:5px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+color:#9ca3af;
+}
+
+</style>
+</head>
 
 <body>
 
 <header>
 
-<img src="profile.jpg">
+<img src="">
 
 <h1>Pavankumar C M</h1>
 
@@ -39,96 +171,6 @@ color:white;
 
 </header>
 
-header h1{
-margin:0;
-color:#38bdf8;
-}
-
-nav{
-margin-top:10px;
-}
-
-nav a{
-margin:10px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-section{
-padding:60px 20px;
-max-width:1000px;
-margin:auto;
-}
-
-h2{
-color:#38bdf8;
-margin-bottom:20px;
-}
-
-.card{
-background:#111827;
-padding:20px;
-margin-bottom:20px;
-border-radius:8px;
-}
-
-.skills span{
-background:#1f2937;
-padding:6px 10px;
-border-radius:4px;
-margin:5px;
-display:inline-block;
-}
-
-.project{
-background:#111827;
-padding:20px;
-border-radius:8px;
-margin-bottom:20px;
-}
-
-footer{
-background:#111827;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-button{
-background:#38bdf8;
-border:none;
-padding:10px 20px;
-border-radius:5px;
-cursor:pointer;
-}
-
-a.btn{
-display:inline-block;
-background:#38bdf8;
-padding:10px 15px;
-border-radius:5px;
-color:black;
-text-decoration:none;
-font-weight:bold;
-margin-top:10px;
-}
-</style>
-</head>
-
-<body>
-
-<header>
-<h1>Pavankumar C M</h1>
-<p>Software Developer | AI Enthusiast | Cloud Learner</p>
-
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
 
 <section id="about">
 
@@ -136,36 +178,54 @@ margin-top:10px;
 
 <div class="card">
 
-<p>
-Hello! I am <b>Pavankumar C M</b>, a Mechanical Engineering graduate who is passionate about technology and software development.
-</p>
+<p>Hello! I am <b>Pavankumar C M</b>, a Mechanical Engineering graduate passionate about software development, cloud computing and AI technologies.</p>
 
-<p>
-I am currently learning programming, cloud technologies, and AI tools to build modern applications and solve real-world problems.
-</p>
+<p>Currently learning programming, DevOps tools and cloud platforms to build modern applications.</p>
 
-<p>
-My goal is to become a skilled <b>Software Engineer</b> and work on innovative technologies.
-</p>
+<a class="btn" href="#">Download Resume</a>
 
 </div>
 
 </section>
+
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<p><b>Bachelor of Engineering – Mechanical</b></p>
+
+<p>Interested in software development, cloud computing and AI technologies.</p>
+
+</div>
+
+</section>
+
 
 <section id="skills">
 
 <h2>Skills</h2>
 
-<div class="card skills">
+<div class="card">
 
-<span>Java</span>
-<span>Git</span>
-<span>GitHub</span>
-<span>AWS</span>
+<p>Java</p>
+<div class="bar"><div class="java"></div></div>
+
+<p>Git</p>
+<div class="bar"><div class="git"></div></div>
+
+<p>AWS</p>
+<div class="bar"><div class="aws"></div></div>
+
+<p>HTML / CSS</p>
+<div class="bar"><div class="html"></div></div>
 
 </div>
 
 </section>
+
 
 <section id="projects">
 
@@ -175,9 +235,9 @@ My goal is to become a skilled <b>Software Engineer</b> and work on innovative t
 
 <h3>Solar Grass Cutter Machine</h3>
 
-<p>
-A solar powered grass cutting machine designed to reduce electricity usage and support renewable energy.
-</p>
+<p>Solar powered grass cutting machine designed to reduce electricity usage.</p>
+
+<a class="btn" href="#">Source Code</a>
 
 </div>
 
@@ -185,9 +245,9 @@ A solar powered grass cutting machine designed to reduce electricity usage and s
 
 <h3>Git Learning Project</h3>
 
-<p>
-A project created to understand Git commands such as merge, rebase, reset, and checkout.
-</p>
+<p>Project created to practice Git commands like merge, rebase and reset.</p>
+
+<a class="btn" href="#">Source Code</a>
 
 </div>
 
@@ -195,13 +255,15 @@ A project created to understand Git commands such as merge, rebase, reset, and c
 
 <h3>Portfolio Website</h3>
 
-<p>
-This personal portfolio website built using HTML and CSS to showcase my skills and projects.
-</p>
+<p>Personal developer portfolio created using HTML and CSS.</p>
+
+<a class="btn" href="#">Live Demo</a>
+<a class="btn" href="#">Source Code</a>
 
 </div>
 
 </section>
+
 
 <section id="contact">
 
@@ -211,27 +273,43 @@ This personal portfolio website built using HTML and CSS to showcase my skills a
 
 <p>Email: <a href="mailto:pavankumarcm04@gmail.com">pavankumarcm04@gmail.com</a></p>
 
-<p>GitHub:  
-<a href="https://github.com/pavankumarcm04" target="_blank">
-github.com/pavankumarcm04
-</a>
-</p>
+<p>GitHub: <a href="https://github.com/pavankumarcm04">github.com/pavankumarcm04</a></p>
 
-<p>LinkedIn:  
-<a href="https://www.linkedin.com/in/pavan-kumar-cm-148726376/" target="_blank">
-LinkedIn Profile
-</a>
-</p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/pavan-kumar-cm-148726376/">LinkedIn Profile</a></p>
 
 </div>
 
 </section>
 
+
 <footer>
 
 <p>© 2026 Pavankumar C M</p>
 
+<p>Built with HTML & CSS</p>
+
 </footer>
+
+
+<a href="#" class="btn" style="position:fixed;bottom:20px;right:20px;">↑</a>
+
+
+<script>
+
+const text="Software Developer | Cloud Learner | AI Enthusiast";
+let i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,70);
+}
+}
+
+typing();
+
+</script>
 
 </body>
 </html>
